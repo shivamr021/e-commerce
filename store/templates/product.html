@@ -11,7 +11,7 @@
                           <div class="col-md-2">
                             {% load static %}
                             {% load product_images %}
-                            <img src="{% static 'images/products/'|add:product.name|get_product_image %}" class="img-fluid rounded-start" alt="{{ product.name }}">
+                            <img src="{% static product.name|get_product_image %}" class="img-fluid rounded-start" alt="{{ product.name }}">
                           </div>
                           <div class="col-md-9">
                             <div class="card-body">
