@@ -6,12 +6,9 @@ A simple yet production-ready **e‑commerce website** built with Django. Featur
 
 ## 📉 Live Demo
 
-* **Site:** [https://your-live-demo-link.com](https://djangocart.onrender.com/)
-* **Admin:** [https://your-live-demo-link.com/admin](https://djangocart.onrender.com/admin)
+* **Site:** [Live Demo](https://djangocart.onrender.com/)
+* **Admin:** [Admin Page](https://djangocart.onrender.com/admin)
 * Example Credentials (demo): `user@example.com / password123`
-
-![Homepage Screenshot](static/images/demo/homepage.png)
-![Cart Screenshot](static/images/demo/cart.png)
 
 ---
 
