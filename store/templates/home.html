@@ -26,7 +26,8 @@
                         {% endif %}
 
                         <!-- Product image-->
-                        <img class="card-img-top" src="{{ product.image.url }}" alt="..." height="250" />
+                        {% load static %}
+                        <img class="card-img-top" src="{% static 'images/products/'|add:product.name|add:'.jpg' %}" alt="{{ product.name }}" height="250" onerror="this.src='{% static 'images/products/placeholder.jpg' %}'" />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
