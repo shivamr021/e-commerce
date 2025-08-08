@@ -12,7 +12,10 @@ class Cart():
             cart = self.session['session_key'] = {}
 
         # Make sure cart is available on all pages of site
-        self.cart = cart 
+        self.cart = cart
+        
+        # Save session to make it persistent
+        self.session.modified = True 
 
     def add(self, product, quantity):
         product_id = str(product.id)
@@ -55,3 +58,11 @@ class Cart():
 
         thing = self.cart
         return thing
+    
+    def delete(self, product):
+        product_id = str(product)
+        # Delete from dictionary/cart
+        if product_id in self.cart:
+            del self.cart[product_id]
+        
+        self.session.modified = True
