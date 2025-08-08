@@ -27,7 +27,8 @@
 
                         <!-- Product image-->
                         {% load static %}
-                        <img class="card-img-top" src="{% static 'images/products/'|add:product.name|add:'.jpg' %}" alt="{{ product.name }}" height="250" onerror="this.src='{% static 'images/products/placeholder.jpg' %}'" />
+                        {% load product_images %}
+                        <img class="card-img-top" src="{% static 'images/products/'|add:product.name|get_product_image %}" alt="{{ product.name }}" height="250" />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
